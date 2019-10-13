@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+>
+
+    <data>
+        <variable
+                name="viewModel"
+                type="com.code.details.DetailsViewModel"
+        />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+    >
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+
+            <ImageView
+                    android:id="@+id/ivArtwork"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"/>
+
+            <TextView
+                    android:id="@+id/tvLongDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginTop="10dp"
+                    android:text="Hazel (Shailene Woodley) and Gus (Ansel Elgort) share a sarcastic sense of humor, a distaste for the conventional, and ultimately a love that sweeps them on an unforgettable journey. Although the two teens face unlikely challenges, their courage and dedication to each other prove that while life isn’t perfect, love can still be extraordinary. Laura Dern and Sam Trammell also star in this powerfully moving film based on John Green’s New York Times best-selling novel."
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_below="@+id/ivArtwork"/>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
